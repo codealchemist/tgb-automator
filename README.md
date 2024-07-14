@@ -1,8 +1,8 @@
 # AFIP Automator
 
-A little automation tool to ease the burden of tedious accounting tasks.
+A little automation tool to ease the burden of tedious accounting tasks (ARBA TGB).
 
-<img width="567" alt="image" src="https://github.com/codealchemist/afip-automator/assets/1118293/ecf084ab-6a09-4ce1-a830-a793f48ab96a">
+<img width="487" alt="image" src="https://github.com/user-attachments/assets/baa39683-1d4e-4353-88ff-605e42c91457">
 
 ## About
 
@@ -19,25 +19,40 @@ As usual, install dependencies:
 You'll need to provide the invoice details in an `.env` file:
 
 ```
-# AFIP LOGIN
+# ARBA LOGIN
 USERNAME=[YOUR_CUIT]
 PASSWORD=[YOUR_PASSWORD]
 
-# TRUELOGIC
-SELL_POINT_OPTION=[SELL_POINT_OPTION]
-COUNTRY_OPTION=[COUNTRY_OPTION] # País destino. 212=Estados Unidos, 225=Uruguay
-COUNTRY_ID=[TARGET_COUNTRY_ID] # CUIT país receptor
-COMPANY_ID=[TARGET_COMPANY_ID] # CUIT empresa
-COMPANY_NAME=[TARGET_COMPANY_NAME]
-COMPANY_ADDRESS=[TARGET_COMPANY_ADDRESS]
-COMPANY_EMAIL=[TARGET_COMPANY_EMAIL]
-DESCRIPTION=Software development services
+# TGB DETAILS
+NAME=[VALUE]
+DOC_TYPE=[VALUE]
+INSTRUMENT_TYPE=[VALUE]
+DNI=[VALUE]
+ACT_ID=[VALUE]
+ACT_DESCRIPTION=[VALUE]
+CUIT_PREFIX=[VALUE]
+CUIT_VERIFIER=[VALUE]
+CUIT_PREFIX_SENDER=[VALUE]
+DNI_SENDER=[VALUE]
+CUIT_VERIFIER_SENDER=[VALUE]
+NAME_SENDER=[VALUE]
+DOC_TYPE_SENDER=[VALUE]
+ADDRESS_STREET=[VALUE]
+ADDRESS_NUMBER=[VALUE]
+EMAIL=[VALUE]
+PHONE=[VALUE]
+ZIP_CODE=[VALUE]
+CITY=[VALUE]
+CITY_CODE=[VALUE]
+BANK_NAME=[VALUE]
+BANK_CUIT_PREFIX=[VALUE]
+BANK_CUIT=[VALUE]
+BANK_CUIT_VERIFIER=[VALUE]
+BANK_ACCOUNT_NUMBER=[VALUE]
 ```
 
 ## Run it
 
 `npm start`
 
-It will ask for the invoice amount and do the rest on its own.
-Currently the only supported workflow is services expo for activity code `620100`
-(information technology).
+It will ask for the total TGB amount and do the rest on its own.
