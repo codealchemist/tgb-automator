@@ -1,4 +1,4 @@
-# AFIP Automator
+# TGB Automator
 
 A little automation tool to ease the burden of tedious accounting tasks (ARBA TGB).
 
