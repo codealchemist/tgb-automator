@@ -6,7 +6,7 @@ A little automation tool to ease the burden of tedious accounting tasks (ARBA TG
 
 ## About
 
-It uses [Nightwatch.js](https://nightwatchjs.org/) to run an automation script on the AFIP platform using Chrome.
+It uses [Nightwatch.js](https://nightwatchjs.org/) to run an automation script on the ARBA platform using Chrome.
 
 ## Before first run
 
