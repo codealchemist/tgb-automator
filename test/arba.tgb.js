@@ -39,6 +39,7 @@ describe('tgb-bert', function () {
         const handle = result.value[1]
         browser.window.switchTo(handle)
       })
+      .waitForElementVisible('#CUIT', 15000)
       .setValue('#CUIT', USERNAME)
       .setValue('#clave_Cuit', PASSWORD)
       .pause(500)
